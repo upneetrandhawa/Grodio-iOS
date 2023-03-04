@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A66C116B39FA3896A81E1C3 /* Pods_Grodio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3E18FD7C519B0D2AC49FE6 /* Pods_Grodio.framework */; };
+		E81D1F6BA5B0D83C6ED28DE7 /* Pods_GrodioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10740792CAAE431A3DB7FF44 /* Pods_GrodioTests.framework */; };
+		F11661A02739E16E00A23150 /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F116619F2739E16D00A23150 /* CreateGroupViewController.swift */; };
+		F11661A62739E97700A23150 /* JoinGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11661A52739E97700A23150 /* JoinGroupViewController.swift */; };
+		F137166827165EFB005050AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F137166727165EFB005050AA /* AppDelegate.swift */; };
+		F137166A27165EFB005050AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F137166927165EFB005050AA /* SceneDelegate.swift */; };
+		F137166F27165EFB005050AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F137166D27165EFB005050AA /* Main.storyboard */; };
+		F137167127165F02005050AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F137167027165F02005050AA /* Assets.xcassets */; };
+		F137167427165F02005050AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F137167227165F02005050AA /* LaunchScreen.storyboard */; };
+		F137167F27165F02005050AA /* GrodioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F137167E27165F02005050AA /* GrodioTests.swift */; };
+		F147661827184CC800C29AEC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F147661627184CB500C29AEC /* AVFoundation.framework */; };
+		F15AC8BC278E5E1C00575B80 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15AC8BB278E5E1C00575B80 /* CreateAccountViewController.swift */; };
+		F15AC8C0278E5E2F00575B80 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15AC8BF278E5E2F00575B80 /* LoginViewController.swift */; };
+		F15AC8D9278E920700575B80 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15AC8D8278E920700575B80 /* User.swift */; };
+		F15AC8DD278E921400575B80 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15AC8DC278E921400575B80 /* Group.swift */; };
+		F15AC935278EB6EB00575B80 /* groupChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15AC934278EB6EB00575B80 /* groupChatViewController.swift */; };
+		F15F255528BF0A2B00F5B38A /* DeviceLocalAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15F255428BF0A2B00F5B38A /* DeviceLocalAuthentication.swift */; };
+		F15F25B128C1C2E000F5B38A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15F25B028C1C2DE00F5B38A /* ProfileViewController.swift */; };
+		F15F25B528C1CA4400F5B38A /* ProfileGroupsListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15F25B428C1CA4400F5B38A /* ProfileGroupsListCollectionViewCell.swift */; };
+		F1603905272988040040ED26 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1603904272988040040ED26 /* PlayerViewController.swift */; };
+		F195781027202EB6006C3E2C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F195780F27202EB6006C3E2C /* GoogleService-Info.plist */; };
+		F1D0BEF128BC3BB900429931 /* DisplayNameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0BEF028BC3BB900429931 /* DisplayNameCollectionViewCell.swift */; };
+		F1D0BEF528BC3DF400429931 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0BEF428BC3DF400429931 /* UIView+Border.swift */; };
+		F1D0BEF928BC3E5B00429931 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0BEF828BC3E5B00429931 /* UIView+Shadow.swift */; };
+		F1D0BEFD28BC421900429931 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0BEFC28BC421900429931 /* Constants.swift */; };
+		F1D0BF1628BC9A0B00429931 /* UIView+rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0BF1528BC9A0A00429931 /* UIView+rotate.swift */; };
+		F1D0BF1A28BCA07700429931 /* UIView+addMultipleImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0BF1928BCA07700429931 /* UIView+addMultipleImages.swift */; };
+		F1D0BF2228BCA2E500429931 /* UITextField+setLeftImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0BF2128BCA2E500429931 /* UITextField+setLeftImage.swift */; };
+		F1D0BF2828BCB49800429931 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0BF2728BCB49800429931 /* LocalStorage.swift */; };
+		F1D0BF2C28BCCC4F00429931 /* UIViewController+vibrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0BF2B28BCCC4E00429931 /* UIViewController+vibrate.swift */; };
+		F1E95B7D279B7A2C00E92E5F /* UITextView+centerVertically.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E95B7C279B7A2C00E92E5F /* UITextView+centerVertically.swift */; };
+		F1F197A1279831F4004FFD5A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F197A0279831F3004FFD5A /* Message.swift */; };
+		F1F197BF2798A54A004FFD5A /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F197BE2798A54A004FFD5A /* MessageCell.swift */; };
+		F1F75A7D273B8522000D2DB1 /* UIButton+rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F75A7C273B8522000D2DB1 /* UIButton+rotate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F137167B27165F02005050AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F137165C27165EFB005050AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F137166327165EFB005050AA;
+			remoteInfo = Grodio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		049287FD6CB069CBB5062092 /* Pods-Grodio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grodio.debug.xcconfig"; path = "Target Support Files/Pods-Grodio/Pods-Grodio.debug.xcconfig"; sourceTree = "<group>"; };
+		0B966F651443452E08648E4F /* Pods-Grodio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grodio.release.xcconfig"; path = "Target Support Files/Pods-Grodio/Pods-Grodio.release.xcconfig"; sourceTree = "<group>"; };
+		10740792CAAE431A3DB7FF44 /* Pods_GrodioTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrodioTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C3E18FD7C519B0D2AC49FE6 /* Pods_Grodio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grodio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C38CC90E660220206410AE /* Pods-GrodioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrodioTests.release.xcconfig"; path = "Target Support Files/Pods-GrodioTests/Pods-GrodioTests.release.xcconfig"; sourceTree = "<group>"; };
+		A4D80C3EFB5038CCE7C3BBD8 /* Pods-GrodioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrodioTests.debug.xcconfig"; path = "Target Support Files/Pods-GrodioTests/Pods-GrodioTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F1027463273141E400E9A649 /* Grodio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Grodio.entitlements; sourceTree = "<group>"; };
+		F116619F2739E16D00A23150 /* CreateGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
+		F11661A52739E97700A23150 /* JoinGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinGroupViewController.swift; sourceTree = "<group>"; };
+		F137166427165EFB005050AA /* Grodio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grodio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F137166727165EFB005050AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F137166927165EFB005050AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F137166E27165EFB005050AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F137167027165F02005050AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F137167327165F02005050AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F137167527165F02005050AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F137167A27165F02005050AA /* GrodioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrodioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F137167E27165F02005050AA /* GrodioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrodioTests.swift; sourceTree = "<group>"; };
+		F137168027165F02005050AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F147661627184CB500C29AEC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F15AC8BB278E5E1C00575B80 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		F15AC8BF278E5E2F00575B80 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F15AC8D8278E920700575B80 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F15AC8DC278E921400575B80 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		F15AC934278EB6EB00575B80 /* groupChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupChatViewController.swift; sourceTree = "<group>"; };
+		F15F255428BF0A2B00F5B38A /* DeviceLocalAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceLocalAuthentication.swift; sourceTree = "<group>"; };
+		F15F25B028C1C2DE00F5B38A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F15F25B428C1CA4400F5B38A /* ProfileGroupsListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileGroupsListCollectionViewCell.swift; sourceTree = "<group>"; };
+		F1603904272988040040ED26 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		F195780F27202EB6006C3E2C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F1D0BEF028BC3BB900429931 /* DisplayNameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNameCollectionViewCell.swift; sourceTree = "<group>"; };
+		F1D0BEF428BC3DF400429931 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
+		F1D0BEF828BC3E5B00429931 /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		F1D0BEFC28BC421900429931 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F1D0BF1528BC9A0A00429931 /* UIView+rotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+rotate.swift"; sourceTree = "<group>"; };
+		F1D0BF1928BCA07700429931 /* UIView+addMultipleImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addMultipleImages.swift"; sourceTree = "<group>"; };
+		F1D0BF2128BCA2E500429931 /* UITextField+setLeftImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+setLeftImage.swift"; sourceTree = "<group>"; };
+		F1D0BF2728BCB49800429931 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
+		F1D0BF2B28BCCC4E00429931 /* UIViewController+vibrate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+vibrate.swift"; sourceTree = "<group>"; };
+		F1E95B7C279B7A2C00E92E5F /* UITextView+centerVertically.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+centerVertically.swift"; sourceTree = "<group>"; };
+		F1F197A0279831F3004FFD5A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		F1F197BE2798A54A004FFD5A /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		F1F75A7C273B8522000D2DB1 /* UIButton+rotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+rotate.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F137166127165EFB005050AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F147661827184CC800C29AEC /* AVFoundation.framework in Frameworks */,
+				5A66C116B39FA3896A81E1C3 /* Pods_Grodio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F137167727165F02005050AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81D1F6BA5B0D83C6ED28DE7 /* Pods_GrodioTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46380480A378F5BE3779D4FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				049287FD6CB069CBB5062092 /* Pods-Grodio.debug.xcconfig */,
+				0B966F651443452E08648E4F /* Pods-Grodio.release.xcconfig */,
+				A4D80C3EFB5038CCE7C3BBD8 /* Pods-GrodioTests.debug.xcconfig */,
+				63C38CC90E660220206410AE /* Pods-GrodioTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F137165B27165EFB005050AA = {
+			isa = PBXGroup;
+			children = (
+				F137166627165EFB005050AA /* Grodio */,
+				F137167D27165F02005050AA /* GrodioTests */,
+				F137166527165EFB005050AA /* Products */,
+				F147661527184CB400C29AEC /* Frameworks */,
+				46380480A378F5BE3779D4FD /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		F137166527165EFB005050AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F137166427165EFB005050AA /* Grodio.app */,
+				F137167A27165F02005050AA /* GrodioTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F137166627165EFB005050AA /* Grodio */ = {
+			isa = PBXGroup;
+			children = (
+				F1E95B7B279B79FD00E92E5F /* Extras */,
+				F1F197B92798A4F7004FFD5A /* Views */,
+				F15AC8AC278E4E8900575B80 /* Models */,
+				F15AC8AB278E4E7A00575B80 /* Controllers */,
+				F1F75A73273B8370000D2DB1 /* Extensions */,
+				F1027463273141E400E9A649 /* Grodio.entitlements */,
+				F15F255328BF082900F5B38A /* Tools */,
+				F195780F27202EB6006C3E2C /* GoogleService-Info.plist */,
+				F137166727165EFB005050AA /* AppDelegate.swift */,
+				F137166927165EFB005050AA /* SceneDelegate.swift */,
+				F137166D27165EFB005050AA /* Main.storyboard */,
+				F137167027165F02005050AA /* Assets.xcassets */,
+				F137167227165F02005050AA /* LaunchScreen.storyboard */,
+				F137167527165F02005050AA /* Info.plist */,
+			);
+			path = Grodio;
+			sourceTree = "<group>";
+		};
+		F137167D27165F02005050AA /* GrodioTests */ = {
+			isa = PBXGroup;
+			children = (
+				F137167E27165F02005050AA /* GrodioTests.swift */,
+				F137168027165F02005050AA /* Info.plist */,
+			);
+			path = GrodioTests;
+			sourceTree = "<group>";
+		};
+		F147661527184CB400C29AEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F147661627184CB500C29AEC /* AVFoundation.framework */,
+				3C3E18FD7C519B0D2AC49FE6 /* Pods_Grodio.framework */,
+				10740792CAAE431A3DB7FF44 /* Pods_GrodioTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F15AC8AB278E4E7A00575B80 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F15AC8BF278E5E2F00575B80 /* LoginViewController.swift */,
+				F15AC8BB278E5E1C00575B80 /* CreateAccountViewController.swift */,
+				F116619F2739E16D00A23150 /* CreateGroupViewController.swift */,
+				F11661A52739E97700A23150 /* JoinGroupViewController.swift */,
+				F1603904272988040040ED26 /* PlayerViewController.swift */,
+				F15AC934278EB6EB00575B80 /* groupChatViewController.swift */,
+				F15F25B028C1C2DE00F5B38A /* ProfileViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F15AC8AC278E4E8900575B80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F15AC8D8278E920700575B80 /* User.swift */,
+				F15AC8DC278E921400575B80 /* Group.swift */,
+				F1F197A0279831F3004FFD5A /* Message.swift */,
+				F1D0BF2728BCB49800429931 /* LocalStorage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F15F255328BF082900F5B38A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F15F255428BF0A2B00F5B38A /* DeviceLocalAuthentication.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F1E95B7B279B79FD00E92E5F /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				F1D0BEFC28BC421900429931 /* Constants.swift */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
+		F1F197B92798A4F7004FFD5A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1F197BE2798A54A004FFD5A /* MessageCell.swift */,
+				F1D0BEF028BC3BB900429931 /* DisplayNameCollectionViewCell.swift */,
+				F15F25B428C1CA4400F5B38A /* ProfileGroupsListCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1F75A73273B8370000D2DB1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F1F75A7C273B8522000D2DB1 /* UIButton+rotate.swift */,
+				F1E95B7C279B7A2C00E92E5F /* UITextView+centerVertically.swift */,
+				F1D0BEF428BC3DF400429931 /* UIView+Border.swift */,
+				F1D0BEF828BC3E5B00429931 /* UIView+Shadow.swift */,
+				F1D0BF1528BC9A0A00429931 /* UIView+rotate.swift */,
+				F1D0BF1928BCA07700429931 /* UIView+addMultipleImages.swift */,
+				F1D0BF2128BCA2E500429931 /* UITextField+setLeftImage.swift */,
+				F1D0BF2B28BCCC4E00429931 /* UIViewController+vibrate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F137166327165EFB005050AA /* Grodio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F137168327165F02005050AA /* Build configuration list for PBXNativeTarget "Grodio" */;
+			buildPhases = (
+				862B155BB8193397707E7372 /* [CP] Check Pods Manifest.lock */,
+				F137166027165EFB005050AA /* Sources */,
+				F137166127165EFB005050AA /* Frameworks */,
+				F137166227165EFB005050AA /* Resources */,
+				C3BC1FB457236E94D8C253CF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Grodio;
+			productName = Grodio;
+			productReference = F137166427165EFB005050AA /* Grodio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F137167927165F02005050AA /* GrodioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F137168627165F02005050AA /* Build configuration list for PBXNativeTarget "GrodioTests" */;
+			buildPhases = (
+				72822B3F57A5BF4E15BAD4A6 /* [CP] Check Pods Manifest.lock */,
+				F137167627165F02005050AA /* Sources */,
+				F137167727165F02005050AA /* Frameworks */,
+				F137167827165F02005050AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F137167C27165F02005050AA /* PBXTargetDependency */,
+			);
+			name = GrodioTests;
+			productName = GrodioTests;
+			productReference = F137167A27165F02005050AA /* GrodioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F137165C27165EFB005050AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = USR;
+				TargetAttributes = {
+					F137166327165EFB005050AA = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					F137167927165F02005050AA = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = F137166327165EFB005050AA;
+					};
+				};
+			};
+			buildConfigurationList = F137165F27165EFB005050AA /* Build configuration list for PBXProject "Grodio" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F137165B27165EFB005050AA;
+			productRefGroup = F137166527165EFB005050AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F137166327165EFB005050AA /* Grodio */,
+				F137167927165F02005050AA /* GrodioTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F137166227165EFB005050AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F137167427165F02005050AA /* LaunchScreen.storyboard in Resources */,
+				F195781027202EB6006C3E2C /* GoogleService-Info.plist in Resources */,
+				F137167127165F02005050AA /* Assets.xcassets in Resources */,
+				F137166F27165EFB005050AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F137167827165F02005050AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72822B3F57A5BF4E15BAD4A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GrodioTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		862B155BB8193397707E7372 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Grodio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3BC1FB457236E94D8C253CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Grodio/Pods-Grodio-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Grodio/Pods-Grodio-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Grodio/Pods-Grodio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F137166027165EFB005050AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15AC8DD278E921400575B80 /* Group.swift in Sources */,
+				F1D0BF2228BCA2E500429931 /* UITextField+setLeftImage.swift in Sources */,
+				F1D0BEFD28BC421900429931 /* Constants.swift in Sources */,
+				F15AC8C0278E5E2F00575B80 /* LoginViewController.swift in Sources */,
+				F1D0BEF528BC3DF400429931 /* UIView+Border.swift in Sources */,
+				F1D0BF1A28BCA07700429931 /* UIView+addMultipleImages.swift in Sources */,
+				F1D0BF1628BC9A0B00429931 /* UIView+rotate.swift in Sources */,
+				F15F255528BF0A2B00F5B38A /* DeviceLocalAuthentication.swift in Sources */,
+				F1603905272988040040ED26 /* PlayerViewController.swift in Sources */,
+				F15F25B128C1C2E000F5B38A /* ProfileViewController.swift in Sources */,
+				F15AC935278EB6EB00575B80 /* groupChatViewController.swift in Sources */,
+				F1D0BF2828BCB49800429931 /* LocalStorage.swift in Sources */,
+				F11661A02739E16E00A23150 /* CreateGroupViewController.swift in Sources */,
+				F1D0BEF128BC3BB900429931 /* DisplayNameCollectionViewCell.swift in Sources */,
+				F137166827165EFB005050AA /* AppDelegate.swift in Sources */,
+				F1D0BF2C28BCCC4F00429931 /* UIViewController+vibrate.swift in Sources */,
+				F15AC8BC278E5E1C00575B80 /* CreateAccountViewController.swift in Sources */,
+				F1F75A7D273B8522000D2DB1 /* UIButton+rotate.swift in Sources */,
+				F1F197A1279831F4004FFD5A /* Message.swift in Sources */,
+				F1F197BF2798A54A004FFD5A /* MessageCell.swift in Sources */,
+				F1E95B7D279B7A2C00E92E5F /* UITextView+centerVertically.swift in Sources */,
+				F15F25B528C1CA4400F5B38A /* ProfileGroupsListCollectionViewCell.swift in Sources */,
+				F137166A27165EFB005050AA /* SceneDelegate.swift in Sources */,
+				F15AC8D9278E920700575B80 /* User.swift in Sources */,
+				F1D0BEF928BC3E5B00429931 /* UIView+Shadow.swift in Sources */,
+				F11661A62739E97700A23150 /* JoinGroupViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F137167627165F02005050AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F137167F27165F02005050AA /* GrodioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F137167C27165F02005050AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F137166327165EFB005050AA /* Grodio */;
+			targetProxy = F137167B27165F02005050AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F137166D27165EFB005050AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F137166E27165EFB005050AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F137167227165F02005050AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F137167327165F02005050AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F137168127165F02005050AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F137168227165F02005050AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F137168427165F02005050AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 049287FD6CB069CBB5062092 /* Pods-Grodio.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Grodio/Grodio.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = M74F9CC4M2;
+				INFOPLIST_FILE = Grodio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ur.grodio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F137168527165F02005050AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B966F651443452E08648E4F /* Pods-Grodio.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Grodio/Grodio.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = M74F9CC4M2;
+				INFOPLIST_FILE = Grodio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ur.grodio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F137168727165F02005050AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4D80C3EFB5038CCE7C3BBD8 /* Pods-GrodioTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FEGH56UJDC;
+				INFOPLIST_FILE = GrodioTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = usr.GrodioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Grodio.app/Grodio";
+			};
+			name = Debug;
+		};
+		F137168827165F02005050AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63C38CC90E660220206410AE /* Pods-GrodioTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FEGH56UJDC;
+				INFOPLIST_FILE = GrodioTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = usr.GrodioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Grodio.app/Grodio";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F137165F27165EFB005050AA /* Build configuration list for PBXProject "Grodio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F137168127165F02005050AA /* Debug */,
+				F137168227165F02005050AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F137168327165F02005050AA /* Build configuration list for PBXNativeTarget "Grodio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F137168427165F02005050AA /* Debug */,
+				F137168527165F02005050AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F137168627165F02005050AA /* Build configuration list for PBXNativeTarget "GrodioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F137168727165F02005050AA /* Debug */,
+				F137168827165F02005050AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F137165C27165EFB005050AA /* Project object */;
+}

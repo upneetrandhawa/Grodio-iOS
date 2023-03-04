@@ -1,0 +1,6 @@
+framework module Pods_GrodioTests {
+  umbrella header "Pods-GrodioTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
